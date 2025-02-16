@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_PROPARKING_TITLE_ITEM_VIEW_PARKINGLOT" option="View">
+        <message>
+                        <![CDATA[COM_PROPARKING_TITLE_ITEM_VIEW_PARKINGLOT_DESC]]>
+        </message>
+    </layout>
+    <fields name="request">
+        <fieldset 
+            name="request"
+            label="COM_PROPARKING_FIELDSET_ITEM_ID_SELECT_LABEL">
+            <field
+                name="id"
+                query="SELECT `id`, `parkinglot_name` FROM #__proparking_parkinglots ORDER BY `id`"
+                type="sql"
+                key_field="id" 
+                value_field="parkinglot_name"
+                label="COM_PROPARKING_ITEM_ID_SELECT_LABEL"
+                require="true"
+                description="JGLOBAL_SHOW_TITLE_DESC">
+            </field>
+        </fieldset>
+    </fields>
+    <fields name="params">
+        <fieldset 
+            name="basic"
+            label="COM_PROPARKING_FIELDSET_ITEM_ID_SELECT_LABEL_DEPRECATED">
+            <field
+                name="item_id"
+                query="SELECT `id`, `parkinglot_name` FROM #__proparking_parkinglots ORDER BY `id`"
+                type="sql"
+                key_field="id" 
+                value_field="parkinglot_name"
+                label="COM_PROPARKING_ITEM_ID_SELECT_LABEL"
+                require="true"
+                description="JGLOBAL_SHOW_TITLE_DESC">
+            </field>
+        </fieldset>
+    </fields>
+   
+    
+</metadata>
+
+ 

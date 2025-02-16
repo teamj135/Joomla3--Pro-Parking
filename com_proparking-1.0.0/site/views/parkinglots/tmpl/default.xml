@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PROPARKING_TITLE_LIST_VIEW_PARKINGLOTS" option="View">
+        <message>
+                        <![CDATA[COM_PROPARKING_TITLE_LIST_VIEW_PARKINGLOTS_DESC]]>
+        </message>
+	</layout>
+	
+</metadata>

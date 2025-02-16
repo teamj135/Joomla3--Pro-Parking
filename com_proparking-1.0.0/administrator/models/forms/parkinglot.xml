@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="JGLOBAL_FIELD_CREATED_BY_DESC" hidden="true" hint="COM_PROPARKING_FORM_LBL_PARKINGLOT_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="JGLOBAL_FIELD_MODIFIED_BY_LABEL" description="JGLOBAL_FIELD_MODIFIED_BY_DESC" hidden="true" hint="COM_PROPARKING_FORM_LBL_PARKINGLOT_MODIFIED_BY"/>
+    <field name="parkinglot_name" filter="safehtml" type="text" required="true" message="Please enter parkinglot name" label="COM_PROPARKING_FORM_LBL_PARKINGLOT_PARKINGLOT_NAME" description="COM_PROPARKING_FORM_DESC_PARKINGLOT_PARKINGLOT_NAME" hint="COM_PROPARKING_FORM_LBL_PARKINGLOT_PARKINGLOT_NAME"/>
+    <field name="parkinglot_location" filter="safehtml" type="text" required="true" message="Please enter parkinglot location" label="COM_PROPARKING_FORM_LBL_PARKINGLOT_PARKINGLOT_LOCATION" description="COM_PROPARKING_FORM_DESC_PARKINGLOT_PARKINGLOT_LOCATION" hint="COM_PROPARKING_FORM_LBL_PARKINGLOT_PARKINGLOT_LOCATION"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>
